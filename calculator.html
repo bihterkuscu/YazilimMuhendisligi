@@ -1,0 +1,25 @@
+<body>
+    <script type="text/javascript">
+    function topla()
+    {
+        var x=Number(document.getElementById("sayi1").value);
+        var y=Number(document.getElementById("sayi2").value);
+        if(document.getElementById("islem").value=="topla")
+        {
+        var toplam=x+y;
+        document.getElementById("sonuc").value=toplam;
+        }
+     }
+    
+
+</script>
+<h1 id="baslik1">Toplama İşlemi</h1>
+sayı1:<input type="text" name="sayi1" id="sayi1" /><br />
+sayı2:<input type="text" name="sayi2" id="sayi2" /><br />
+İşlem seç:<select id="islem">
+	<option value="topla">topla</option>
+</select><br />
+Sonuc:<input type="text" name="sonuc" id="sonuc" /><br />
+
+<input type="submit" onclick="topla()" value="Topla"> 
+</body>
