@@ -9,7 +9,21 @@
         var toplam=x+y;
         document.getElementById("sonuc").value=toplam;
         }
+        else if(document.getElementById("islem").value=="bolme")
+    {
+        {
+        if (y!=0){
+            sonuc=x/y;
+        }
+        else {
+            sonuc="Sıfıra bölme hatası";
+        }
+        document.getElementById('sonuc').value = sonuc;
+    }
+    }
      }
+     
+
     
 
 </script>
@@ -18,6 +32,7 @@ sayı1:<input type="text" name="sayi1" id="sayi1" /><br />
 sayı2:<input type="text" name="sayi2" id="sayi2" /><br />
 İşlem seç:<select id="islem">
 	<option value="topla">topla</option>
+    <option value="bolme">bölme</option>
 </select><br />
 Sonuc:<input type="text" name="sonuc" id="sonuc" /><br />
 
